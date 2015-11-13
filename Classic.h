@@ -13,9 +13,10 @@ public:
 	Classic();
 	Classic(char * s1, char * s2, char *s3, int n, double x);
 	~Classic();
+	Classic(const Classic &right);
 	
-	void report() const;
-
+	virtual void report() const;
+	virtual Classic & operator=(const Classic &right);
 };
 
 

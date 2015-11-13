@@ -48,7 +48,7 @@ Cd::Cd(const Cd &d){
 	
 
 Cd::~Cd(){
-	cout<<"\n destroyed";
+	cout<<"\n destroyed Cd";
 }
 
 

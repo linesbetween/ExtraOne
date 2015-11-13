@@ -26,7 +26,7 @@ int main() {
 	bravo(c2);
 
 
-	cout << "Testing assignment: ";
+	cout << "\n Testing assignment: ";
 	Classic copy;
 	copy = c2;
 	copy.report();

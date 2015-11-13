@@ -18,9 +18,11 @@ public:
 	Cd(char * s1, char * s2, int n, double x);
 	Cd(const Cd &d);
 	Cd();
-	~Cd();
-	void report() const; // reports all the CD data
-	Cd & operator=(const Cd &d);
+	~Cd(); // this is called after "copy = c2;", which is too early... 
+
+	//made virtual for polymorphism
+	virtual void report() const; // reports all the CD data
+	virtual Cd & operator=(const Cd &d);
 };
 
 #endif

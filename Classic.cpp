@@ -20,10 +20,31 @@ Classic::~Classic(){
 	cout<<"Classic Destroyed";
 }
 
+Classic::Classic(const Classic &right){
+	for(int i=0;i<50;i++ ){
+		primary[i]=right.primary[i];
+	}
+	sLength3=right.sLength3;
+
+	Cd::Cd(right);
+}
+
 void Classic::report() const{
 	cout<<"\n Primary: ";
 	for(int i=0;i<sLength3;i++){
 		cout<<primary[i];
 	}
 	Cd::report();
+}
+
+Classic& Classic::operator=(const Classic &right){
+
+	for(int i=0;i<50;i++ ){
+		primary[i]=right.primary[i];
+	}
+	sLength3=right.sLength3;
+
+	Cd::Cd(right);
+
+	return *this;
 }
