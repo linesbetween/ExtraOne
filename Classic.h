@@ -13,8 +13,11 @@ public:
 	Classic();
 	Classic(char * s1, char * s2, char *s3, int n, double x);
 	~Classic();
+	//Classic(Classic &right);
+
 	
 	void report() const;
+	//Classic & operator=(const Classic &right);
 
 };
 

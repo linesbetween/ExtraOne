@@ -25,5 +25,5 @@ void Classic::report() const{
 	for(int i=0;i<sLength3;i++){
 		cout<<primary[i];
 	}
-	cout<<"\n";
+	Cd::report();
 }
