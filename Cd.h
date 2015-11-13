@@ -1,6 +1,6 @@
 // base class
 class Cd { // represents a CD disk
-private: 
+protected: 
 	char performers[50];
 	char label[20];
 	int selections; // number of selections
