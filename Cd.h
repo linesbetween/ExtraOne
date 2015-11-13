@@ -21,7 +21,7 @@ public:
 	~Cd();
 	void report() const; // reports all the CD data
 	Cd & operator=(const Cd &d);
-}
+};
 
 #endif
 

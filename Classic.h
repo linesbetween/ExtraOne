@@ -16,7 +16,7 @@ public:
 	
 	void report() const;
 
-}
+};
 
 
 #endif
