@@ -12,16 +12,16 @@ int main() {
 
 	Cd *pcd = &c1;
 
-	cout << "Using object directly: \n";
+	cout << "\n Using object directly: ";
 	c1.report(); // use Cd method
 	c2.report(); // use Classic method
 
-	cout << "Using type cd * pointer to objects:\n";
+	cout << "\n Using type cd * pointer to objects:";
 	pcd->report(); // use cd method for cd object
 	pcd = &c2;
 	pcd->report(); // use Classic method for classic object
 
-	cout << "Calling a function with a Cd reference argument:\n";
+	cout << "\n Calling a function with a Cd reference argument:";
 	bravo(c1);
 	bravo(c2);
 
