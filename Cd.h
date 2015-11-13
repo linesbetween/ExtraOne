@@ -1,3 +1,8 @@
+#ifndef CD_H
+#define CD_H
+using namespace std;
+
+
 // base class
 class Cd { // represents a CD disk
 protected: 
@@ -16,4 +21,7 @@ public:
 	~Cd();
 	void report() const; // reports all the CD data
 	Cd & operator=(const Cd &d);
-};
+}
+
+#endif
+

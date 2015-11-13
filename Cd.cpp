@@ -1,4 +1,4 @@
-#include "Cd.h";
+#include "Cd.h"
 #include <iostream>
 using namespace std;
 
@@ -16,11 +16,11 @@ Cd::Cd(){
 	sLength2=0;
 }
 Cd::Cd(char *s1, char *s2, int n, double x){
-	for (int i=0;i<strlen(s1);i++){ //strlen(string)v.s. sizeof(array)
+	for (unsigned  i=0;i<strlen(s1);i++){ //strlen(string)v.s. sizeof(array)
 		performers[i] = s1[i]; //array of char v.s. string
 	}
 
-	for (int i=0;i<strlen(s2);i++){
+	for (unsigned  i=0;i<strlen(s2);i++){
 		label[i]=s2[i];
 	}
 
