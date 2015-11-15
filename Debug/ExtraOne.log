@@ -1,23 +1,25 @@
-﻿Build started 11/12/2015 6:36:14 PM.
+﻿Build started 11/15/2015 3:45:59 PM.
      1>Project "D:\data\course\Fall2015\C++Projects\Extra1recover\ExtraOne\ExtraOne\ExtraOne.vcxproj" on node 2 (build target(s)).
-     1>PrepareForBuild:
-         Creating directory "D:\data\course\Fall2015\C++Projects\Extra1recover\ExtraOne\Debug\".
-       InitializeBuildStatus:
+     1>InitializeBuildStatus:
          Creating "Debug\ExtraOne.unsuccessfulbuild" because "AlwaysCreate" was specified.
        ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt Cd.cpp Test.cpp
-         Test.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt Cd.cpp Classic.cpp Test.cpp
+         Classic.cpp
          Cd.cpp
-     1>d:\data\course\fall2015\c++projects\extra1recover\extraone\extraone\cd.cpp(1): warning C4067: unexpected tokens following preprocessor directive - expected a newline
-     1>d:\data\course\fall2015\c++projects\extra1recover\extraone\extraone\cd.cpp(19): warning C4018: '<' : signed/unsigned mismatch
-     1>d:\data\course\fall2015\c++projects\extra1recover\extraone\extraone\cd.cpp(23): warning C4018: '<' : signed/unsigned mismatch
+         Generating Code...
+         Compiling...
+         Test.cpp
          Generating Code...
        Link:
          C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\data\course\Fall2015\C++Projects\Extra1recover\ExtraOne\Debug\ExtraOne.exe" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\ExtraOne.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"D:\data\course\Fall2015\C++Projects\Extra1recover\ExtraOne\Debug\ExtraOne.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\data\course\Fall2015\C++Projects\Extra1recover\ExtraOne\Debug\ExtraOne.lib" /MACHINE:X86 Debug\Cd.obj
+         Debug\Classic.obj
          Debug\Test.obj
+         LINK : D:\data\course\Fall2015\C++Projects\Extra1recover\ExtraOne\Debug\ExtraOne.exe not found or not built by the last incremental link; performing full link
          ExtraOne.vcxproj -> D:\data\course\Fall2015\C++Projects\Extra1recover\ExtraOne\Debug\ExtraOne.exe
        Manifest:
          C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"D:\data\course\Fall2015\C++Projects\Extra1recover\ExtraOne\Debug\ExtraOne.exe;#1" /manifest Debug\ExtraOne.exe.intermediate.manifest
+       CopyFilesToOutputDirectory:
+         Copying file from "Debug\ExtraOne.pdb" to "D:\data\course\Fall2015\C++Projects\Extra1recover\ExtraOne\Debug\ExtraOne.pdb".
        FinalizeBuildStatus:
          Deleting file "Debug\ExtraOne.unsuccessfulbuild".
          Touching "Debug\ExtraOne.lastbuildstate".
@@ -25,4 +27,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:04.41
+Time Elapsed 00:00:04.90
