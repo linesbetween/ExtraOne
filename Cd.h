@@ -1,6 +1,15 @@
+/* CIT237 Extracredit 1
+/* Hanfei Xu
+*/
+
+#ifndef CD_H
+#define CD_H
+using namespace std;
+
+
 // base class
 class Cd { // represents a CD disk
-private: 
+protected: 
 	char performers[50];
 	char label[20];
 	int selections; // number of selections
@@ -13,7 +22,12 @@ public:
 	Cd(char * s1, char * s2, int n, double x);
 	Cd(const Cd &d);
 	Cd();
-	~Cd();
-	void report() const; // reports all the CD data
-	Cd & operator=(const Cd &d);
+	~Cd(); 
+
+	//made virtual for polymorphism
+	virtual void report() const; // reports all the CD data
+	virtual Cd & operator=(const Cd &d);
 };
+
+#endif
+
