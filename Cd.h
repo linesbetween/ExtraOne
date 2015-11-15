@@ -1,3 +1,7 @@
+/* CIT237 Extracredit 1
+/* Hanfei Xu
+*/
+
 #ifndef CD_H
 #define CD_H
 using namespace std;
@@ -18,7 +22,7 @@ public:
 	Cd(char * s1, char * s2, int n, double x);
 	Cd(const Cd &d);
 	Cd();
-	~Cd(); // this is called after "copy = c2;", which is too early... 
+	~Cd(); 
 
 	//made virtual for polymorphism
 	virtual void report() const; // reports all the CD data

@@ -1,3 +1,8 @@
+/* CIT237 Extracredit 1
+/* Hanfei Xu
+*/
+
+
 #include "Cd.h"
 #include "Classic.h"
 #include <iostream>
@@ -28,7 +33,7 @@ Classic::Classic(const Classic &right){
 		primary[i]=right.primary[i];
 	}
 	sLength3=right.sLength3;
-
+	//the rest copy use copy constructor form Cd
 	Cd::Cd(right);
 }
 
@@ -41,14 +46,16 @@ void Classic::report() const{
 }
 
 Classic& Classic::operator=(const Classic &right){
-	cout<<"\n Classic overload =";
+	//cout<<"\n Classic overload =";
 	for(int i=0;i<50;i++ ){
 		primary[i]=right.primary[i];
 	}
 	sLength3=right.sLength3;
 
-	//Cd::Cd(right);
+	
+	//Cd::Cd(right); //use constructor here will cause destructor to be called
 	//below copied from Cd::operator=
+	//Can't figure out how to inherit operator overload.
 	for(int i=0;i<50;i++ ){
 		performers[i]=right.performers[i];
 	}

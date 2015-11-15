@@ -1,11 +1,11 @@
+/* CIT237 Extracredit 1
+/* Hanfei Xu
+*/
+
 #include "Cd.h"
 #include <iostream>
 using namespace std;
 
-char performers[50];
-	char label[20];
-	int selections; // number of selections
-	double playtime; // playing time in minutes
 
 Cd::Cd(){
 	cout<<"\n Cd default constructor";
@@ -28,6 +28,8 @@ Cd::Cd(char *s1, char *s2, int n, double x){
 
 	selections = n;
 	playtime = x;
+	//store string length in to variables for other functions
+	//since the original source string only passed to constructor.
 	sLength1=strlen(s1);
 	sLength2=strlen(s2);
 }
@@ -35,6 +37,8 @@ Cd::Cd(char *s1, char *s2, int n, double x){
 
 Cd::Cd(const Cd &d){
 	cout<<"\n Cd copy constructor";
+
+	//use default array length
 	for(int i=0;i<50;i++ ){
 		performers[i]=d.performers[i];
 	}
@@ -73,7 +77,7 @@ void Cd::report() const{
 }
 
 Cd& Cd:: operator=(const Cd &d){
-	cout<<"\n Cd overload =";
+	//cout<<"\n Cd overload =";
 	for(int i=0;i<50;i++ ){
 		performers[i]=d.performers[i];
 	}
