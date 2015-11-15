@@ -8,6 +8,7 @@ char performers[50];
 	double playtime; // playing time in minutes
 
 Cd::Cd(){
+	cout<<"\n Cd default constructor";
 	label[1]='\0';
 	performers[1]='\0';
 	selections = 0;
@@ -16,6 +17,7 @@ Cd::Cd(){
 	sLength2=0;
 }
 Cd::Cd(char *s1, char *s2, int n, double x){
+	cout<<"\n Cd constructor with args";
 	for (unsigned  i=0;i<strlen(s1);i++){ //strlen(string)v.s. sizeof(array)
 		performers[i] = s1[i]; //array of char v.s. string
 	}
@@ -32,6 +34,7 @@ Cd::Cd(char *s1, char *s2, int n, double x){
 
 
 Cd::Cd(const Cd &d){
+	cout<<"\n Cd copy constructor";
 	for(int i=0;i<50;i++ ){
 		performers[i]=d.performers[i];
 	}
@@ -70,6 +73,7 @@ void Cd::report() const{
 }
 
 Cd& Cd:: operator=(const Cd &d){
+	cout<<"\n Cd overload =";
 	for(int i=0;i<50;i++ ){
 		performers[i]=d.performers[i];
 	}
